@@ -113,7 +113,7 @@ def getvideos(numcaps,path,url):
 			videolink = nn[0].get('src')
 			videolinks.append(videolink)
 
-			namefile = animename+ "_"+ str(num+1).zfill(2)
+			namefile = animename+ "_"+ str(num+1).zfill(len(str(numcaps)))
 			downloadfile(namefile,videolink,path,'mp4')
 	print "finalizado"
 	
